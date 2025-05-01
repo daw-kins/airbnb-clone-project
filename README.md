@@ -40,3 +40,51 @@ Manages the deployment pipeline, infrastructure, and automation tools. Ensures c
 
 - **Database Design**: Proper schema design and normalization are applied to ensure efficient data storage, retrieval, and relationships between entities.
 
+## Database Design
+
+The database is designed to support core features such as user authentication, property listings, bookings, payments, and user-generated reviews. Below are the main entities and their key fields:
+
+### Users
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `is_host` (Boolean to differentiate between guests and property owners)
+
+### Properties
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+
+### Bookings
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `start_date`
+- `end_date`
+- `status` (e.g., pending, confirmed, cancelled)
+
+### Reviews
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `rating` (e.g., 1–5 stars)
+- `comment`
+
+### Payments
+- `id` (Primary Key)
+- `booking_id` (Foreign Key → Bookings)
+- `amount`
+- `payment_method`
+- `payment_status` (e.g., paid, refunded, pending)
+
+### Entity Relationships
+- A **User** can list multiple **Properties** (if they are a host).
+- A **User** can make multiple **Bookings**.
+- A **Booking** belongs to one **Property** and one **User**.
+- A **Review** is written by a **User** for a **Property**.
+- A **Payment** is linked to a specific **Booking**.
+
