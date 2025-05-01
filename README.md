@@ -22,3 +22,21 @@ Designs intuitive and appealing user interfaces. Focuses on user experience, usa
 
 ### DevOps Engineer
 Manages the deployment pipeline, infrastructure, and automation tools. Ensures continuous integration and delivery (CI/CD) is in place.
+
+
+## Technology Stack
+
+- **Django**: A high-level Python web framework used to build robust and scalable backend APIs. It supports rapid development and clean, pragmatic design, making it ideal for RESTful services.
+
+- **MySQL**: A widely-used open-source relational database management system used for storing, retrieving, and managing structured application data.
+
+- **Docker**: A containerization platform that allows the application and its services to run in isolated environments, ensuring consistency across different development and production setups.
+
+- **GitHub Actions**: A CI/CD tool integrated with GitHub used to automate workflows such as testing, building, and deploying the backend application. It helps maintain code quality and streamline the release process.
+
+- **CI/CD (Continuous Integration/Continuous Deployment)**: A development practice integrated using tools like GitHub Actions to automatically build, test, and deploy code, ensuring frequent and reliable software delivery.
+
+- **Security Best Practices**: Backend development incorporates security considerations such as authentication, data validation, encryption, and protection against common web vulnerabilities (e.g., SQL injection, XSS).
+
+- **Database Design**: Proper schema design and normalization are applied to ensure efficient data storage, retrieval, and relationships between entities.
+
