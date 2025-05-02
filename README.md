@@ -107,3 +107,23 @@ After a stay, guests can leave reviews and ratings for properties. This feature 
 ### 💳 Payment Processing
 Secure payment processing is integrated to handle transactions between guests and hosts. It ensures that bookings are confirmed only after successful payment, contributing to the platform's reliability and trustworthiness.
 
+## 🔐 API Security
+
+Securing the backend APIs is critical to protect sensitive user data, maintain trust, and ensure the platform functions as intended. The following key security measures will be implemented:
+
+### 🔑 Authentication
+Only verified users can access protected endpoints using methods like token-based authentication (e.g., JWT). This ensures that only valid users can perform actions such as booking properties or managing listings.
+
+### 🛂 Authorization
+Role-based access control (RBAC) will be used to ensure users only perform actions they’re allowed to. For instance, only hosts can create or edit properties, while guests can only make bookings.
+
+### 🚫 Rate Limiting
+Rate limiting protects the API from abuse and brute-force attacks by limiting the number of requests a user or IP can make within a given timeframe. This helps maintain performance and prevents denial-of-service (DoS) attacks.
+
+### 🔒 Data Protection
+Sensitive data such as passwords will be hashed, and all communication will be encrypted using HTTPS. This prevents interception and ensures user data like login credentials and payment details remain secure.
+
+### 🧾 Secure Payments
+All payment processing will use trusted third-party gateways and adhere to security standards like PCI-DSS. This ensures financial data is not stored insecurely and prevents fraud or data leaks.
+
+Implementing these measures ensures the integrity, availability, and confidentiality of the platform's services and user data.
