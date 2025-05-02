@@ -127,3 +127,20 @@ Sensitive data such as passwords will be hashed, and all communication will be e
 All payment processing will use trusted third-party gateways and adhere to security standards like PCI-DSS. This ensures financial data is not stored insecurely and prevents fraud or data leaks.
 
 Implementing these measures ensures the integrity, availability, and confidentiality of the platform's services and user data.
+
+## 🚀 CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of building, testing, and deploying code. They ensure that changes pushed to the codebase are automatically validated and safely delivered to production or staging environments with minimal human intervention.
+
+Implementing CI/CD is crucial for this project as it:
+- Reduces human error by automating testing and deployment.
+- Speeds up development by providing immediate feedback on code changes.
+- Ensures consistency across environments.
+- Improves code quality through automated linting, testing, and review processes.
+
+### 🛠 Tools
+- **GitHub Actions**: Used to run tests, check code quality, and automate deployments.
+- **Docker**: Containerizes the application to ensure consistency across development, testing, and production environments.
+- **Docker Hub / GitHub Container Registry**: For storing and sharing Docker images.
+
+These tools help us maintain a streamlined and reliable development workflow.
