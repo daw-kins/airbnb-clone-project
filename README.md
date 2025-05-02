@@ -88,3 +88,22 @@ The database is designed to support core features such as user authentication, p
 - A **Review** is written by a **User** for a **Property**.
 - A **Payment** is linked to a specific **Booking**.
 
+![ERD Diagram](docs/erd.jpg)
+
+## Feature Breakdown
+
+### 🧑‍💼 User Management
+This feature allows users to register, log in, and manage their profiles. It includes support for both guests and hosts, enabling role-based access to features such as property listings or bookings.
+
+### 🏡 Property Management
+Hosts can create, update, and delete property listings. Each listing includes details like title, description, location, pricing, and availability, which are essential for attracting and informing potential guests.
+
+### 📅 Booking System
+Guests can view available properties and make bookings by selecting their preferred dates. The system ensures that date conflicts are handled and records are properly maintained for both guests and hosts.
+
+### ⭐ Review & Rating System
+After a stay, guests can leave reviews and ratings for properties. This feature promotes trust and helps other users make informed decisions based on past experiences.
+
+### 💳 Payment Processing
+Secure payment processing is integrated to handle transactions between guests and hosts. It ensures that bookings are confirmed only after successful payment, contributing to the platform's reliability and trustworthiness.
+
